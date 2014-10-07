@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource version="2.3.0.1" xmlns="http://www.wxwidgets.org/wxxrc">
+    <object class="wxFrame" name="esdc_mainwin" platform="win">
+        <style>wxSTAY_ON_TOP|wxNO_BORDER</style>
+        <size>900,600</size>
+        <title>ESDC</title>
+        <centered>1</centered>
+        <object class="wxBoxSizer" name="main_sizer">
+            <orient>wxVERTICAL</orient>
+            <object class="sizeritem">
+                <flag>wxALIGN_CENTER_HORIZONTAL|wxLEFT|wxRIGHT|wxTOP</flag>
+                <border>1</border>
+                <object class="wxBoxSizer" name="header_sizer">
+                    <orient>wxHORIZONTAL</orient>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                        <border>5</border>
+                        <object class="wxPanel" name="header_panel">
+                            <size>1000,40</size>
+                            <style>wxTAB_TRAVERSAL</style>
+                            <bg>#69CBF5</bg>
+                            <object class="wxBoxSizer" name="header_all_sizer">
+                                <orient>wxHORIZONTAL</orient>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL</flag>
+                                    <border>5</border>
+                                    <object class="wxBoxSizer" name="header_left_sizer">
+                                        <orient>wxHORIZONTAL</orient>
+                                        <object class="sizeritem">
+                                            <flag>wxGROW</flag>
+                                            <border>5</border>
+                                            <object class="wxStaticBitmap" name="icon">
+                                                <size>32,32</size>
+                                                <pos>10,4</pos>
+                                                <bitmap>android.png</bitmap>
+                                            </object>
+                                        </object>
+                                        <object class="sizeritem">
+                                            <flag>wxALIGN_TOP</flag>
+                                            <border>5</border>
+                                            <object class="wxStaticText" name="caption">
+                                                <size>100,32</size>
+                                                <pos>60,12</pos>
+                                                <font>
+                                                    <size>9</size>
+                                                    <family>swiss</family>
+                                                    <face>微软雅黑</face>
+                                                </font>
+                                                <style>wxALIGN_LEFT</style>
+                                                <fg>#FFFFFF</fg>
+                                                <label>ESDC-智能控制平台</label>
+                                            </object>
+                                        </object>
+                                    </object>
+                                </object>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_VERTICAL</flag>
+                                    <border>5</border>
+                                    <object class="wxBoxSizer" name="header_right_sizer">
+                                        <orient>wxHORIZONTAL</orient>
+                                        <object class="sizeritem">
+                                            <flag>wxALIGN_CENTER_VERTICAL</flag>
+                                            <border>5</border>
+                                            <object class="wxStaticText" name="close_btn">
+                                                <size>40,32</size>
+                                                <pos>960,12</pos>
+                                                <style>wxALIGN_CENTRE</style>
+                                                <label>X</label>
+                                            </object>
+                                        </object>
+                                    </object>
+                                </object>
+                            </object>
+                        </object>
+                    </object>
+                </object>
+            </object>
+            <object class="sizeritem">
+                <flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+                <border>1</border>
+                <object class="wxBoxSizer" name="main_sizer">
+                    <orient>wxHORIZONTAL</orient>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                        <border>1</border>
+                        <object class="wxPanel" name="left_panel">
+                            <size>640,600</size>
+                            <style>wxTAB_TRAVERSAL</style>
+                            <bg>#FFFFFF</bg>
+                            <object class="wxStaticBitmap" name="video_frame">
+                                <size>640,360</size>
+                                <bg>#A32326</bg>
+                            </object>
+                            <object class="wxPanel" name="bottom_area">
+                                <size>640,240</size>
+                                <pos>-1,360</pos>
+                                <style>wxTAB_TRAVERSAL</style>
+                                <bg>#000000</bg>
+                            </object>
+                        </object>
+                    </object>
+                    <object class="sizeritem">
+                        <flag>wxGROW</flag>
+                        <border>5</border>
+                        <option>1</option>
+                        <object class="wxPanel" name="right_panel">
+                            <size>359,-1</size>
+                            <style>wxTAB_TRAVERSAL</style>
+                            <bg>#FFFFFF</bg>
+                            <object class="wxBoxSizer" name="right_sizer">
+                                <orient>wxVERTICAL</orient>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_HORIZONTAL</flag>
+                                    <border>5</border>
+                                    <object class="wxPanel" name="right_top_panel">
+                                        <size>359,200</size>
+                                        <style>wxTAB_TRAVERSAL</style>
+                                        <bg>#FF8000</bg>
+                                    </object>
+                                </object>
+                                <object class="sizeritem">
+                                    <flag>wxALIGN_CENTER_HORIZONTAL</flag>
+                                    <border>5</border>
+                                    <object class="wxPanel" name="right_bottom_panel">
+                                        <size>359,400</size>
+                                        <pos>-1,200</pos>
+                                        <style>wxTAB_TRAVERSAL</style>
+                                        <bg>#008000</bg>
+                                    </object>
+                                </object>
+                            </object>
+                        </object>
+                    </object>
+                </object>
+            </object>
+            <object class="sizeritem">
+                <flag>wxALIGN_CENTER_HORIZONTAL|wxBOTTOM</flag>
+                <border>1</border>
+                <object class="wxBoxSizer" name="footer_sizeer">
+                    <orient>wxHORIZONTAL</orient>
+                    <object class="sizeritem">
+                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                        <border>5</border>
+                        <object class="wxPanel" name="footer_panel">
+                            <size>1000,20</size>
+                            <style>wxTAB_TRAVERSAL</style>
+                            <bg>#69CBF5</bg>
+                        </object>
+                    </object>
+                </object>
+            </object>
+        </object>
+    </object>
+</resource>
